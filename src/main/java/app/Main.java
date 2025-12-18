@@ -11,9 +11,17 @@ public class Main {
         double miles = 10;
         double km = convertMilesToKm(miles);
         System.out.println(miles + " miles = " + km + " km");
+
+        double kilometers = 20;
+        double mi = convertKmToMiles(kilometers);
+        System.out.println(kilometers + " km = " + mi + " miles");
     }
 
     private static double convertMilesToKm(double miles) {
         return miles * MILES_TO_KM;
+    }
+
+    private static double convertKmToMiles(double km) {
+        return km / MILES_TO_KM;
     }
 }
